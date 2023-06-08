@@ -1,0 +1,67 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+.items {
+    display: grid;
+    grid-template-columns: 244px 3fr 1fr;
+    grid-template-rows: 120px 780px 100px;
+}
+.nav-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 244px;
+    display: grid;
+    grid-template-columns: 0.2fr, 1.8fr;
+}
+#logo-text > p {
+    padding-left: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+#logo-text > p > a {
+    text-decoration: none;
+    color: black;
+}
+.left-nav-items {
+    flex-direction: column;
+}
+.left-nav-items > a > p {
+    padding-left: 20px;
+    height: 40px;
+    transition: 0.5s;
+    position: relative;
+    border-radius: 10px;
+}
+.left-nav-items > a > p:hover{
+    background-color: lightgray;
+}
+.left-nav-items > label {
+    font-size: 16px;
+}
+/*
+.left-nav-items > a > p {
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    position: absolute;
+    top: -30%;
+}
+*/
+.left-nav-items > a {
+    text-decoration: none;
+    color: black;
+}
+.left-nav-items > a > p > b {
+    position: absolute;
+    top: 23%;
+}
+.active {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.main-items {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}

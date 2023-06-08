@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <title>js cal</title>
+    </head>
+    <body>
+        <div class="title">
+            <h1>JS 계산기</h1>
+        </div>
+        <div class="sik">
+            
+        </div>
+        <div class="main-item">
+            <span id="b">첫번째 숫자</span><input type="number" id="a-1" onkeyup="sik(), check()"/>
+            <span id="b-1">두번째 숫자</span><input type="number" id="a-2" onkeyup="sik()" disabled/><br>
+            <span>부호</span>
+            <button onclick="plus()" id="p">+</button>
+            <button onclick="minus()" id="m">-</button>
+            <button onclick="times()" id="t">*</button>
+            <button onclick="slash()" id="s">/</button>
+            <br>
+            <br>
+            <button onclick="res()" id="res">=</button>
+            <br>
+            <button onclick="ref()" id="ref">AC</button>
+            <br>
+            <h2><div class="result"></div></h2>
+        </div>
+    </body>
+    <footer>
+        <h6>김정욱의 계산기</h6>
+        <script src="calcc.js"></script>
+    </footer>
+</html>
